@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Byasi - Architecture & Interior HTML Template</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- css include -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/flipclock.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- body wrap start -->
+    <div class="body_wrap">
+        <!-- Splash Screen Start -->
+        <div id="loader-wrapper">
+            <div class="splash">
+                <svg id="welcome" width="716" height="110" viewBox="0 0 716 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M145.288 4.488L117.208 105H93.448L74.584 33.432L54.856 105L31.24 105.144L4.168 4.488H25.768L43.48 82.536L63.928 4.488H86.392L105.688 82.104L123.544 4.488H145.288Z" stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path d="M178.612 20.76V45.96H212.452V61.944H178.612V88.584H216.772V105H158.452V4.34399H216.772V20.76H178.612Z" stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path d="M255.252 89.016H288.372V105H235.092V4.488H255.252V89.016Z" stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path d="M296.29 54.6C296.29 44.712 298.498 35.88 302.914 28.104C307.426 20.232 313.522 14.136 321.202 9.816C328.978 5.4 337.666 3.192 347.266 3.192C358.498 3.192 368.338 6.072 376.786 11.832C385.234 17.592 391.138 25.56 394.498 35.736H371.314C369.01 30.936 365.746 27.336 361.522 24.936C357.394 22.536 352.594 21.336 347.122 21.336C341.266 21.336 336.034 22.728 331.426 25.512C326.914 28.2 323.362 32.04 320.77 37.032C318.274 42.024 317.026 47.88 317.026 54.6C317.026 61.224 318.274 67.08 320.77 72.168C323.362 77.16 326.914 81.048 331.426 83.832C336.034 86.52 341.266 87.864 347.122 87.864C352.594 87.864 357.394 86.664 361.522 84.264C365.746 81.768 369.01 78.12 371.314 73.32H394.498C391.138 83.592 385.234 91.608 376.786 97.368C368.434 103.032 358.594 105.864 347.266 105.864C337.666 105.864 328.978 103.704 321.202 99.384C313.522 94.968 307.426 88.872 302.914 81.096C298.498 73.32 296.29 64.488 296.29 54.6Z" stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path d="M458.373 106.008C448.965 106.008 440.325 103.8 432.453 99.384C424.581 94.968 418.341 88.872 413.733 81.096C409.125 73.224 406.821 64.344 406.821 54.456C406.821 44.664 409.125 35.88 413.733 28.104C418.341 20.232 424.581 14.088 432.453 9.67199C440.325 5.256 448.965 3.048 458.373 3.048C467.877 3.048 476.517 5.256 484.293 9.67199C492.165 14.088 498.357 20.232 502.869 28.104C507.477 35.88 509.781 44.664 509.781 54.456C509.781 64.344 507.477 73.224 502.869 81.096C498.357 88.872 492.165 94.968 484.293 99.384C476.421 103.8 467.781 106.008 458.373 106.008ZM458.373 88.008C464.421 88.008 469.749 86.664 474.357 83.976C478.965 81.192 482.565 77.256 485.157 72.168C487.749 67.08 489.045 61.176 489.045 54.456C489.045 47.736 487.749 41.88 485.157 36.888C482.565 31.8 478.965 27.912 474.357 25.224C469.749 22.536 464.421 21.192 458.373 21.192C452.325 21.192 446.949 22.536 442.245 25.224C437.637 27.912 434.037 31.8 431.445 36.888C428.853 41.88 427.557 47.736 427.557 54.456C427.557 61.176 428.853 67.08 431.445 72.168C434.037 77.256 437.637 81.192 442.245 83.976C446.949 86.664 452.325 88.008 458.373 88.008Z" stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path d="M634.364 4.488V105H614.204V39.624L587.276 105H572.012L544.94 39.624V105H524.78V4.488H547.676L579.644 79.224L611.612 4.488H634.364Z" stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path d="M674.455 20.76V45.96H708.295V61.944H674.455V88.584H712.615V105H654.295V4.34399H712.615V20.76H674.455Z" stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+                </svg>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+        <!-- Splash Screen End -->
+        <!-- Header Start -->
+        <header class="header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-inn">
+                        <div class="site-logo">
+                            <a href="index.html"><img src="assets/img/logo.png" alt="logo" /></a>
+                        </div>
+                        <div class="header-navigation">
+                            <div class="mainmenu">
+                                <nav id="menu">
+                                    <ul class="dropdown">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li>
+                                            <a href="javascript:;">Projects</a>
+                                            <ul>
+                                                <li><a href="project.html">Project</a></li>
+                                                <li><a href="project-details.html">Project Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Service</a>
+                                            <ul>
+                                                <li><a href="service.html">Service</a></li>
+                                                <li><a href="service-details.html">Service Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Pages</a>
+                                            <ul>
+                                                <li><a href="portfolio.html">Portfolio</a></li>
+                                                <li><a href="team.html">Team</a></li>
+                                                <li><a href="faq.html">Faq</a></li>
+                                                <li><a href="contact.html">Contact</a></li>
+                                                <li><a href="404.html">Error</a></li>
+                                                <li><a href="comming-soon.html">Coming Soon</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">Blog</a>
+                                            <ul>
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-action">
+                                <a href="javascript:;" class="search-toggle"><i class="fa fa-search"></i></a>
+                                <a href="contact.html" class="header-btn">
+                                    <div class="icon-holder"><i class="far fa-envelope"></i></div>
+                                    Get In Touch
+                                </a>
+                            </div>
+                            <div id="search-overlay" class="block">
+                                <div class="centered">
+                                    <div id='search-box'>
+                                        <i id="close-btn" class="fa fa-times fa-2x"></i>
+                                        <form action='https://themescare.com/search' id='search-form' method='get' target='_top'>
+                                            <input id='search-text' name='q' placeholder='Type here...' type='text' />
+                                            <button id='search-button' type='submit'>
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spinner-master">
+                                <div id="spinner-form" class="spinner-spin">
+                                    <div class="spinner diagonal part-1"></div>
+                                    <div class="spinner horizontal"></div>
+                                    <div class="spinner diagonal part-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+        <main>
+            <!-- hero start -->
+            <section class="hero-area">
+                <div class="hero-social">
+                    <ul>
+                        <li><a href="javascript:;"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="javascript:;"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="javascript:;"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="javascript:;"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                    <p>Follow Us</p>
+                </div>
+                <div class="hero-slider owl-carousel">
+                    <div class="hero-slide-item" data-background="assets/img/slider-1.jpg">
+                        <div class="container">
+                            <div class="hero-text">
+                                <h2>Unique Architecture <br>Design Ideas</h2>
+                                <div class="hero-action">
+                                    <a href="project.html" class="cta-btn btn-fill">See Projects</a>
+                                    <a href="contact.html" class="cta-btn btn-border">Get Contact</a>
+                                </div>
+                            </div>
+                            <div class="video-main">
+                                <div class="promo-video">
+                                    <div class="waves-block">
+                                        <div class="waves wave-1"></div>
+                                        <div class="waves wave-2"></div>
+                                        <div class="waves wave-3"></div>
+                                    </div>
+                                </div>
+                                <a href="https://www.youtube.com/watch?v=BqI0Q7e4kbk" class="video video-popup mfp-iframe" data-lity=""><i class="fas fa-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slide-item" data-background="assets/img/slider-2.png">
+                        <div class="container">
+                            <div class="hero-text">
+                                <h2>Unique Architecture <br>Design Ideas</h2>
+                                <div class="hero-action">
+                                    <a href="project.html" class="cta-btn btn-fill">See Projects</a>
+                                    <a href="contact.html" class="cta-btn btn-border">Get Contact</a>
+                                </div>
+                            </div>
+                            <div class="video-main">
+                                <div class="promo-video">
+                                    <div class="waves-block">
+                                        <div class="waves wave-1"></div>
+                                        <div class="waves wave-2"></div>
+                                        <div class="waves wave-3"></div>
+                                    </div>
+                                </div>
+                                <a href="https://www.youtube.com/watch?v=BqI0Q7e4kbk" class="video video-popup mfp-iframe" data-lity=""><i class="fas fa-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- hero end -->
+            <!-- about start -->
+            <section class="about-area" data-background="assets/img/about-bg.png">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-left wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <div class="site-heading">
+                                    <h3 class="sub-title">ABOUT US</h3>
+                                    <h2 class="section-title">Strategy-led design in every detail</h2>
+                                </div>
+                                <p>Architecture viverra tristique justo duis vitae diam neque nivamus aestan ateuene artines aringianu atelit finibus viverra nec lacus. Nedana theme erodino setlie suscipe no curabit tristique aringianu atelit finibus .</p>
+                                <p>Design inilla duiman at elit finibus viverra nec a lacus themo the drudea seneoice misuscipit non sagie the fermen.</p>
+                                <div class="about-signature">
+                                    <div class="signature-left">
+                                        <img src="assets/img/signature.png" alt="signature">
+                                    </div>
+                                    <div class="signature-right">
+                                        <h3>Robertho Garcia</h3>
+                                        <p>President</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 offset-lg-1 col-md-6">
+                            <div class="about-counter">
+                                <div class="counter-box">
+                                    <h2><span class="counter">105</span></h2>
+                                    <p>Years of <br>experience</p>
+                                </div>
+                                <div class="counter-box">
+                                    <h2><span class="counter">436</span>+</h2>
+                                    <p>Projects <br>Completed</p>
+                                </div>
+                                <div class="counter-box">
+                                    <h2><span class="counter">180</span>+</h2>
+                                    <p>Awards <br>Winning</p>
+                                </div>
+                            </div>
+                            <div class="about-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <img class="about_img_1" src="assets/img/about-2.png" alt="img" />
+                                <img class="about_img_2" src="assets/img/about-1.png" alt="img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about end -->
+            <!-- service start -->
+            <section class="service-area">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-box wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <div class="service-icon">
+                                    <img src="assets/img/service-icon-1.png" alt="img" />
+                                </div>
+                                <div class="service-text">
+                                    <h3>Interior Design</h3>
+                                    <p>We develop the full cycle of project documentation & full details. Our clients satisfaction is most</p>
+                                    <a href="service-details.html" class="cta-btn btn-border">Read More</a>
+                                </div>
+                                <img src="assets/img/service-bg-1.png" alt="img" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-box wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <div class="service-icon">
+                                    <img src="assets/img/service-icon-2.png" alt="img" />
+                                </div>
+                                <div class="service-text">
+                                    <h3>Architecture</h3>
+                                    <p>We develop the full cycle of project documentation & full details. Our clients satisfaction is most</p>
+                                    <a href="service-details.html" class="cta-btn btn-border">Read More</a>
+                                </div>
+                                <img src="assets/img/service-bg-2.jpg" alt="img" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-box wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                                <div class="service-icon">
+                                    <img src="assets/img/service-icon-3.png" alt="img" />
+                                </div>
+                                <div class="service-text">
+                                    <h3>House Planning</h3>
+                                    <p>We develop the full cycle of project documentation & full details. Our clients satisfaction is most</p>
+                                    <a href="service-details.html" class="cta-btn btn-border">Read More</a>
+                                </div>
+                                <img src="assets/img/service-bg-3.jpg" alt="img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- service end -->
+            <!-- tour start -->
+            <section class="tour-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6 col-md-8 offset-md-4">
+                            <div class="site-heading wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <h3 class="sub-title">TAKE A TOUR!</h3>
+                                <h2 class="section-title">We make things better</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-11 mx-auto">
+                            <div class="tour-inn wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                                <img src="assets/img/tour-img.png" alt="img" />
+                                <div class="video-main">
+                                    <div class="promo-video">
+                                        <div class="waves-block">
+                                            <div class="waves wave-1"></div>
+                                            <div class="waves wave-2"></div>
+                                            <div class="waves wave-3"></div>
+                                        </div>
+                                    </div>
+                                    <a href="https://www.youtube.com/watch?v=BqI0Q7e4kbk" class="video video-popup mfp-iframe" data-lity=""><i class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- tour end -->
+            <!-- Partners Start -->
+            <section class="partners-area pt-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="partner-inn">
+                                <ul>
+                                    <li><a href="javascript:;"><img src="assets/img/partner-1.png" alt="img" /></a></li>
+                                    <li><a href="javascript:;"><img src="assets/img/partner-2.png" alt="img" /></a></li>
+                                    <li><a href="javascript:;"><img src="assets/img/partner-3.png" alt="img" /></a></li>
+                                    <li><a href="javascript:;"><img src="assets/img/partner-7.png" alt="img" /></a></li>
+                                    <li><a href="javascript:;"><img src="assets/img/partner-7.png" alt="img" /></a></li>
+                                    <li><a href="javascript:;"><img src="assets/img/partner-5.png" alt="img" /></a></li>
+                                    <li><a href="javascript:;"><img src="assets/img/partner-6.png" alt="img" /></a></li>
+                                    <li><a href="javascript:;"><img src="assets/img/partner-4.png" alt="img" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Partners End -->
+            <!-- Projects Start -->
+            <section class="projects-area pt-0">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="site-heading wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <h3 class="sub-title">PROJECTS</h3>
+                                <h2 class="section-title">Featured Work.</h2>
+                            </div>
+                            <div class="project-box wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <a href="project-details.html">
+                                    <img src="assets/img/project-1.png" alt="img" />
+                                    <h3>CONCERT HALL<br> IN NEW WORK</h3>
+                                    <p>INTERIOR</p>
+                                    <div class="project-zoom">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                            <path stroke="#ffffff" d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle stroke="#ffffff" cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-5 d-lg-block d-none">
+                                <a href="project.html" class="cta-btn btn-fill">See Projects</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="project-box wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <a href="project-details.html">
+                                    <img src="assets/img/project-3.png" alt="img" />
+                                    <h3>MODERN LIVING<br> ROOM</h3>
+                                    <p>INTERIOR</p>
+                                    <div class="project-zoom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                            <path stroke="#ffffff" d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle stroke="#ffffff" cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project-box wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                                <a href="project-details.html">
+                                    <img src="assets/img/project-2.png" alt="img" />
+                                    <h3>MODERN HOTEL<br> IN AUSTRALIA</h3>
+                                    <p>ARCHITECTURE</p>
+                                    <div class="project-zoom">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                            <path stroke="#ffffff" d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle stroke="#ffffff" cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects End -->
+            <!-- Testimonial Start -->
+            <section class="testimonial-area wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="site-heading">
+                                <h3 class="sub-title">OUR TESTIMONIALS</h3>
+                                <h2 class="section-title">What They ‘re Saying</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tetimonial-slider owl-carousel">
+                                <div class="single-testimonial" data-dot="<span>01</span>">
+                                    <div class="testimonial-text">
+                                        <img src="assets/img/gridicons_quote.svg" alt="icon" />
+                                        <p>Precious ipsum dolor sit amet consectetur adipisicing elit, sed dos mod tempor incididun ut labore et dolore magna aliqua. Ut enim ad min veniam, quis nostrud Precious ips um dolor sit amet, consecte ut labore dolore.</p>
+                                    </div>
+                                    <div class="testimonial-meta">
+                                        <img src="assets/img/testimonial-1.png" alt="img" />
+                                        <div class="testimonial-author">
+                                            <h4>Jacob William</h4>
+                                            <p>Crown Plaza Owner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-testimonial" data-dot="<span>02</span>">
+                                    <div class="testimonial-text">
+                                        <img src="assets/img/gridicons_quote.svg" alt="icon" />
+                                        <p>Precious ipsum dolor sit amet consectetur adipisicing elit, sed dos mod tempor incididun ut labore et dolore magna aliqua. Ut enim ad min veniam, quis nostrud Precious ips um dolor sit amet, consecte ut labore dolore.</p>
+                                    </div>
+                                    <div class="testimonial-meta">
+                                        <img src="assets/img/testimonial-2.png" alt="img" />
+                                        <div class="testimonial-author">
+                                            <h4>Emily White</h4>
+                                            <p>Armada Owner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-testimonial" data-dot="<span>03</span>">
+                                    <div class="testimonial-text">
+                                        <img src="assets/img/gridicons_quote.svg" alt="icon" />
+                                        <p>Precious ipsum dolor sit amet consectetur adipisicing elit, sed dos mod tempor incididun ut labore et dolore magna aliqua. Ut enim ad min veniam, quis nostrud Precious ips um dolor sit amet, consecte ut labore dolore.</p>
+                                    </div>
+                                    <div class="testimonial-meta">
+                                        <img src="assets/img/testimonial-3.png" alt="img" />
+                                        <div class="testimonial-author">
+                                            <h4>Jesica Smith</h4>
+                                            <p>Bisi Plaza Manager</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonial End -->
+            <!-- Latest News Start -->
+            <section class="latest-news-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="site-heading">
+                                <h3 class="sub-title">LATEST NEWS</h3>
+                                <h2 class="section-title">Thoughts on Things</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="blog-details.html" class="news-box news-box-margin wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <div class="news-img">
+                                    <img src="assets/img/news-1.png" alt="img" />
+                                </div>
+                                <div class="news-text">
+                                    <p class="news-date">Planning - 21.04.2020</p>
+                                    <h3>Modern Architecture Buildings</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="blog-details.html" class="news-box wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <div class="news-img">
+                                    <img src="assets/img/news-2.png" alt="img" />
+                                </div>
+                                <div class="news-text">
+                                    <p class="news-date">Planning - 21.04.2020</p>
+                                    <h3>Modern Architecture Buildings</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-center news_more">
+                                <a href="blog.html" class="cta-btn btn-fill">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Latest News End -->
+        </main>
+        <!-- footer start -->
+        <footer class="footer-area">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 order-lg-1 order-1">
+                            <div class="single-footer">
+                                <h3>About</h3>
+                                <p>Precious ipsum dolor sit amet consectetur<br> adipisicing elit, sed dos mod tempor</p>
+                                <ul class="footer-contact">
+                                    <li><i class="fas fa-phone-square-alt"></i> (444) 123 4567 89</li>
+                                    <li><i class="fas fa-envelope"></i> support@company.com</li>
+                                    <li><i class="fas fa-map"></i> 74 South Doult Street, Dubai.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 order-lg-2 order-3">
+                            <div class="single-footer">
+                                <h3>Qucik Links</h3>
+                                <ul>
+                                    <li><a href="javascript:;">About Us</a></li>
+                                    <li><a href="javascript:;">Our Projects</a></li>
+                                    <li><a href="javascript:;">Our Services</a></li>
+                                    <li><a href="javascript:;">Meet The Team</a></li>
+                                    <li><a href="javascript:;">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 order-lg-3 order-4">
+                            <div class="single-footer">
+                                <h3>Exlore</h3>
+                                <ul>
+                                    <li><a href="javascript:;">Case Study</a></li>
+                                    <li><a href="javascript:;">Latest News</a></li>
+                                    <li><a href="javascript:;">Help Center</a></li>
+                                    <li><a href="javascript:;">Privacy Policy</a></li>
+                                    <li><a href="javascript:;">Terms & Condition</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 order-lg-4 order-2">
+                            <div class="single-footer">
+                                <h3>Newsletter</h3>
+                                <p>Sign up now for weekly news & updates.</p>
+                                <div class="newsletter_form">
+                                    <form>
+                                        <input type="email" placeholder="Email Address" />
+                                        <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
+                                    </form>
+                                </div>
+                                <ul class="footer-social">
+                                    <li><a href="javascript:;"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="javascript:;"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="javascript:;"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="javascript:;"><i class="fab fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="fade_rule"></div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>&copy; Copyright 2021 by Themescare</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <!-- body wrap end -->
+
+
+    <!-- jquery include -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.barfiller.js"></script>
+    <script src="assets/js/flipclock.min.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <script src="assets/js/custom-countdown.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints-min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+
+</html>
